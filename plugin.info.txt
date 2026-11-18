@@ -1,0 +1,7 @@
+base   fmtags
+author Benoit
+email  benoit.thibaudeau64@gmail.com
+date   2026-11-17
+name   Fmtags (hashtags)
+desc   Nuage de hashtags (?do=fmtags ou balise <tagcloud>) et listes de pages par tag (<taglist ia projet status=validee>), à partir des tags de l'en-tête des fiches (plugin fmeta).
+url    https://www.dokuwiki.org/plugins

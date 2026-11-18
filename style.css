@@ -1,0 +1,3 @@
+ul.plugin_fmtags_cloud { list-style: none; margin: .5em 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5em 1em; align-items: baseline; }
+ul.plugin_fmtags_cloud li { margin: 0; padding: 0; background: none; }
+ul.plugin_fmtags_cloud .fmt-n { color: __text_neu__; font-size: .7em; }
