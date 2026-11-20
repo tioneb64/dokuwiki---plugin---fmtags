@@ -58,6 +58,10 @@ class syntax_plugin_fmtags extends SyntaxPlugin
     public function render($format, Doku_Renderer $renderer, $data)
     {
         if ($format !== 'xhtml') return false;
+        if (!plugin_load('helper', 'fmeta')) {
+            $renderer->doc .= '<div class="error">' . hsc(sprintf($this->getLang('need_fmeta'), 'fmtags')) . '</div>';
+            return true;
+        }
         // le contenu dépend de l'index et des droits de lecture
         $renderer->nocache();
         /** @var helper_plugin_fmeta $fm */

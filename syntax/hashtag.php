@@ -33,6 +33,7 @@ class syntax_plugin_fmtags_hashtag extends SyntaxPlugin
     /** @inheritdoc */
     public function connectTo($mode)
     {
+        if (!plugin_load('helper', 'fmeta')) return;      // sans fmeta, #mot reste du texte
         // Le lexer travaille en octets : les lettres accentuées UTF-8 sont les octets C3 80-BF.
         // Le / s'écrit \x2F : le lexer double les / à l'intérieur d'une classe de caractères.
         $this->Lexer->addSpecialPattern(
